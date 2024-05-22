@@ -13,7 +13,9 @@ Nossa linguagem de programação principal é o Python, e dependemos muito das s
 - **Matplotlib**: Para criar visualizações estáticas, interativas e animadas.
 - **Seaborn**: Para visualização de dados estatísticos construída sobre o Matplotlib.
 
-## Instalação
+## Instalação automatica
+
+Execute o código na pasta configure se nao tiver acesso , peça ao admin.
 
 ### Python
 

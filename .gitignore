@@ -166,4 +166,23 @@ cython_debug/
 
 # Ignorar arquivo de configuração de ambiente
 .env
+# Ignorar todos os arquivos em uma pasta específica
+repositories/
+configure/
+
+# Ignorar arquivos compactados
+*.zip
+*.rar
+*.tar.gz
+
+# Ignorar arquivos Excel
+*.xls
+*.xlsx
+
+# Ignorar arquivos CSV
+*.csv
+
+# Ignorar arquivos do Word
+*.doc
+*.docx
 
