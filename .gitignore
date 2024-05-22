@@ -168,6 +168,7 @@ cython_debug/
 .env
 # Ignorar todos os arquivos em uma pasta específica
 repositories/
+ferramentas/
 configure/
 
 # Ignorar arquivos compactados
