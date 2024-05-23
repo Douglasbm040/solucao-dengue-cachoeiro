@@ -1,7 +1,7 @@
-import adminstrador_libs as adm_lib
-import bot_download_dados as bot_drive
-import instalador as itl
-import escanear_libs as esc_lib
+import install_libs as adm_lib
+import download_datasets as bot_drive
+import bot_install as itl
+import scanner_libs as esc_lib
 
 # Lista de bibliotecas que você deseja instalar
 LIBRARIES = ['pandas', 'numpy', 'matplotlib', 'seaborn','python-dotenv']
