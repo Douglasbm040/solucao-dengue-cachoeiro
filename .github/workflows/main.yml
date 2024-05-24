@@ -12,13 +12,12 @@ jobs:
     steps:
       - name: Check out code
         uses: actions/checkout@v2
-        
+
       - name: Check for non-Python or non-YAML files
         run: |
-          for file in $(git show --name-only --pretty=format: ${{ github.sha }}); do
-            if [[ "${file}" != *.py && "${file}" != *.yml ]]; then
-              echo "Error: Non-Python or Non-YAML file '${file}' found in commit."
-              exit 1
-            fi
-          done
-          echo "All files are Python or YAML files."
+          if git show --name-only --pretty=format: ${{ github.sha }} | awk -F/ '!/\.py$|\.yml$/ { exit 1 }'; then
+            echo "All files are Python or YAML files."
+          else
+            echo "Error: Non-Python or Non-YAML files found in commit."
+            exit 1
+          fi
