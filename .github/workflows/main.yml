@@ -15,7 +15,7 @@ jobs:
 
       - name: Check for non-Python files
         run: |
-          if git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep -qvE '\.py$'; then
+          if git show --name-only --pretty=format: ${{ github.sha }} | grep -qvE '\.py$'; then
             echo "Error: Non-Python files found in commit."
             exit 1
           else
