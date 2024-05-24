@@ -5,6 +5,7 @@ from src.data import cidadao_precessed_data
 from src.util.excel_util import save_to_excel
 from src.util import path_util
 import os
+
 v1 = []
 v2 = []
 v3 = []
@@ -71,7 +72,7 @@ def execute(data):
         'Total de pessoas com idade entre 20 e 24 anos': v16,
         'Total de pessoas com idade de 60 anos ou mais': v17
     }
-    print(dataset["Total de famílias cadastradas"])
+   
 
     path_processed = path_util.create_path("processed", PASTA_DOUGLAS)
     save_to_excel(dataset, path_processed, PASTA_DOUGLAS + "/cidadao_cadunico_2019.xlsx")
