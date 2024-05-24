@@ -1,4 +1,4 @@
-name: Check Python and YAML Files Only
+name: Check Python and YAML Files Only - verification
 
 on:
   push:
