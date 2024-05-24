@@ -1,4 +1,4 @@
-name: Check Python and YAML Files Only - verification
+name: Check Python and YAML Files Only
 
 on:
   push:
@@ -15,7 +15,7 @@ jobs:
 
       - name: Check for non-Python or non-YAML files
         run: |
-          if git show --name-only --pretty=format: ${{ github.sha }} | grep -qvE '\.py$|\.yml$'; then
+          if git show --name-only --pretty=format: ${{ github.sha }} | grep -qEv '\.py$|\.yml$'; then
             echo "Error: Non-Python or Non-YAML files found in commit."
             exit 1
           else
