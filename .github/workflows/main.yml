@@ -1,4 +1,4 @@
-name: Check Python Files Only
+name: Check Python Files Only - verification
 
 on:
   push:
