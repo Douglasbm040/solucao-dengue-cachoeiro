@@ -187,3 +187,9 @@ configure/
 *.doc
 *.docx
 
+# Ignorar arquivos shapefile
+*.cpg
+*.dbf
+*.prj
+*.shp
+*.shx
